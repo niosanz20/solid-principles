@@ -4,33 +4,32 @@ Concise, beginner-friendly C# examples of the SOLID principles.
 
 ## Structure
 
-- `src/solid/SingleResponsibility`: Single Responsibility Principle
-- `src/solid/OpenClosed`: Open/Closed Principle
-- `src/solid/LiskovSubstitution`: Liskov Substitution Principle
-- `src/solid/InterfaceSegregation`: Interface Segregation Principle
-- `src/solid/DependencyInversion`: Dependency Inversion Principle
+- `SolidPrinciples.sln`: Visual Studio solution that groups all examples under `SOLID`
+- `src/SingleResponsibility`: Single Responsibility Principle executable project
+- `src/OpenClosed`: Open/Closed Principle executable project
+- `src/LiskovSubstitution`: Liskov Substitution Principle executable project
+- `src/InterfaceSegregation`: Interface Segregation Principle executable project
+- `src/DependencyInversion`: Dependency Inversion Principle executable project
 
 ## How To Run
 
 1. Install .NET 8 SDK or later.
-2. Run a single principle example:
+2. Run a single principle project:
 
 ```powershell
-dotnet run --project solid-principles.csproj -- srp
+dotnet run --project src/SingleResponsibility/SingleResponsibility.csproj
 ```
 
-Available principle keys:
+Available projects:
 
-- `srp` or `singleresponsibility`
-- `ocp` or `openclosed`
-- `lsp` or `liskovsubstitution`
-- `isp` or `interfacesegregation`
-- `dip` or `dependencyinversion`
+- `src/SingleResponsibility/SingleResponsibility.csproj`
+- `src/OpenClosed/OpenClosed.csproj`
+- `src/LiskovSubstitution/LiskovSubstitution.csproj`
+- `src/InterfaceSegregation/InterfaceSegregation.csproj`
+- `src/DependencyInversion/DependencyInversion.csproj`
 
-Run all SOLID examples together only when you want to see the full demo:
+Build the full solution:
 
 ```powershell
-dotnet run --project solid-principles.csproj -- solid
+dotnet build SolidPrinciples.sln
 ```
-
-Use `list` to see runnable examples
