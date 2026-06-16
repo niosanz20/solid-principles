@@ -48,6 +48,8 @@ namespace DependencyInversion
             Console.WriteLine("Step 2: Swap the message sender without changing business logic.");
             var smsService = new PasswordResetService(users, tokenGenerator, new SmsMessageSender());
             smsService.SendResetInstructions("ben@example.com");
+            
+            Console.ReadKey();
         }
     }
 }

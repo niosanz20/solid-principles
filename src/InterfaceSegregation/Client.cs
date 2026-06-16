@@ -1,6 +1,7 @@
 namespace InterfaceSegregation
 {
     using System;
+    using System.Diagnostics;
     using InterfaceSegregation.Devices;
     using InterfaceSegregation.Models;
     using InterfaceSegregation.Services;
@@ -54,6 +55,8 @@ namespace InterfaceSegregation
             Console.WriteLine("Step 2: A multi-function device can satisfy separate workflows.");
             archiveService.ArchiveSignedCopy(invoice);
             complianceService.Submit(invoice, "+1-555-0199");
+            
+            Console.ReadKey();
         }
     }
 }

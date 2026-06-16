@@ -53,6 +53,8 @@ namespace LiskovSubstitution
                 var receipt = checkout.Pay(order, paymentMethod);
                 Console.WriteLine($"  {receipt}");
             }
+            
+            Console.ReadKey();
         }
     }
 }

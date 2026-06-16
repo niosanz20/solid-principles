@@ -43,6 +43,8 @@ namespace OpenClosed
             Console.WriteLine("Step 2: Add express or international policies without editing the service.");
             Console.WriteLine($"  {quoteService.CreateQuote(shipment, new ExpressShippingPolicy())}");
             Console.WriteLine($"  {quoteService.CreateQuote(shipment, new InternationalShippingPolicy())}");
+
+            Console.ReadKey();
         }
     }
 }

@@ -59,6 +59,8 @@ namespace SingleResponsibility
             // to SMS or an API integration, pricing and formatting code stay untouched.
             Console.WriteLine("Step 3: Notification delivery is handled by the email sender.");
             sender.Send(order.CustomerEmail, invoice);
+
+            Console.ReadKey();
         }
     }
 }
